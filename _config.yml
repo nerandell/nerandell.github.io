@@ -1,0 +1,32 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Ankit Chandawala
+tagline:             May the source be with you
+url:                 http://nerandell.github.io
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Ankit Chandawala
+  url:               https://twitter.com/ankitchandawala
+  email:             ankitchandawala@gmail.com
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/nerandell/nerandell.github.io
+
+pages_list:       {'About':'/about','Archive':'/archive','Feed':'/atom.xml'}

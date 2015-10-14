@@ -5,7 +5,7 @@ comments: true
 permalink: using-asyncio-gather 
 --- 
 
-We are current in process of rewriting our entire Java based monolithic app into microservice based architecture using [Vyked](https://github.com/kashifrazzaqui/vyked), our in-house open source python based microservice framework based on asyncio framework. Recently, one of my coworkers came to me with what he found was a bug in Vyked. We currently have timeout for an api call set to 2 minutes which he found not to be enough for one of the apis he had written. The api essentially wrote some data to an excel file and then prepare the browser to download it. I found it suspicious that it would take that long and started looking at his code. After some investigiation, I found that this was the block of code that took time:
+We are currently in process of rewriting our entire Java based monolithic app into microservice based architecture using [Vyked](https://github.com/kashifrazzaqui/vyked), our in-house open source python based microservice framework based on `asyncio` which is a part of Python standard library since 3.4. Recently, one of my coworkers came to me with what he thought was a bug in Vyked. We currently have timeout for an api call set to 2 minutes which he found not to be enough for one of the apis he had written. The api essentially wrote some data to an excel file and then prepare the browser to download it. I found it suspicious that it would take that long and started looking at his code. After some investigiation, I found that this was the block of code that took time:
 
 ```python 
 def get_delivery_queue_order_details(self, order_ids): 
@@ -17,7 +17,7 @@ def get_delivery_queue_order_details(self, order_ids):
 	return results 
 ``` 
 
-The code basically returns a list of results. However for each item in this list, a network call has to be made in form of an rpc. When this loop runs, because of `yield from` statement in python the loop will block till the network call is successful and cpu will sit idle during this duration. The point to note here is that fetching one item for this list is completely independant of fetching other items. So there is no point blocking the loop and waiting for the result and then moving to the next iteration. We made a simple change and the time taken reduced drastically. This was the fix: 
+The code basically returns a list of results. However for each item in this list, a network call has to be made in form of a rpc. When this loop runs, because of the `yield from` statement, the loop will block till the network call is successful and cpu will be idle during this duration. The point to note here is that fetching one item for this list is completely independant of fetching other items. So there is no point blocking the loop and waiting for the result and then moving to the next iteration. We made a simple change and the time taken reduced drastically. This was the fix: 
 
 ```python 
 def order_detail(order_id): 

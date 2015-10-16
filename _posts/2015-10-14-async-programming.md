@@ -40,3 +40,5 @@ Cancellation: if the outer Future is cancelled, all children (that have not comp
 ``` 
 
 After this change, instead of waiting for `self._a_network_call` to return, concurrent calls are made and we wait for the list of results. I started looking at other places where developers might have made the same mistake and to my surprise, I found several instances where `asyncio.gather` would have worked much more efficiently.
+
+{% include twitter_plug.html %}

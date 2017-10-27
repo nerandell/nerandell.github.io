@@ -11,6 +11,6 @@ In my free time, I love travelling, hiking and reading.
 To know more about me:
 
 * [Github](https://github.com/nerandell)
-* [LInkedIn](https://in.linkedin.com/pub/ankit-chandawala/35/41/525)
+* [LinkedIn](https://in.linkedin.com/pub/ankit-chandawala/35/41/525)
 
 

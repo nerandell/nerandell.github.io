@@ -1,42 +1,42 @@
-# Permalinks
-#
+# Site settings
+title: "Ankit Chandawala"
+email: ankitchandawala@gmail.com
+description: "Full Stack Software Engineer at Skyscanner"
+baseurl: ""
+url: "https://blog.ankitchandawala.com/"
+title_description: "My name is Ankit and this is my website about everything I find time to write about. I currently work as a Software Engineer at Skyscanner where we are transforming the travel industry.
 
-markdown:         kramdown
+                    I currently live in London, and I love traveling, biking, hiking, and reading whenever I get time.
 
-highlighter:         rouge
+                    You can contact me by email at ankitchandawala /at/ gmail.com"
+title_image: "https://www.gravatar.com/avatar/59d563cdddde473e2cfffc61f339428e?s=500&d=mm"
+google_analytics: "UA-68709154-1"
+disqus_account: nerandell
+github_repository: https://github.com/nerandell/nerandell.github.io
+addthis_id: ra-5c2be88758074d7c
+post_limit: 5
 
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+# Social usernames/URLs
+twitter_username: ankitchandawala
+github_username:  nerandell
+instagram_username: ankitchandawala
+reddit_username:
+linkedin_link: https://www.linkedin.com/in/ankitchandawala/
+google_plus_link:
+stackoverflow_link: https://stackoverflow.com/users/938146/icoder
+xing_link:
+facebook_link:
 
-# Setup
-title:               Ankit Chandawala
-tagline:             May the source be with you
-url:                 http://nerandell.github.io
-paginate:            1
-baseurl:             ""
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://www.instagram.com/ankitchandawala/\">Ankit Chandawala</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/nerandell\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
+# Build settings
+markdown: kramdown
 
-# About/contact
-author:
-  name:              Ankit Chandawala
-  url:               https://twitter.com/ankitchandawala
-  email:             ankitchandawala@gmail.com
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-# Custom vars
-version:             2.0.0
-github:
-  repo:              https://github.com/nerandell/nerandell.github.io
-
-pages_list:       {'About':'/about','Archive':'/archive','Feed':'/atom.xml'}
-
-gem:
-  - jekyll-sitemap
-
-plugins:
-  - jekyll-paginate
+permalink: pretty
+exclude: [vendor]

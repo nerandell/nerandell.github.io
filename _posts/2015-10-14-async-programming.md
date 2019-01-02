@@ -13,7 +13,7 @@ tags:
  - microservices
 --- 
 
-We are currently in process of rewriting our entire Java based monolithic app into microservice based architecture using [Vyked][1], our in-house open source python based microservice framework based on `asyncio` which is a part of Python standard library since 3.4. Recently, one of my coworkers came to me with what he thought was a bug in Vyked. We currently have timeout for an api call set to 2 minutes which he found not to be enough for one of the apis he had written. The api essentially wrote some data to an excel file and then prepare the browser to download it. I found it suspicious that it would take that long and started looking at his code. After some investigiation, I found that this was the block of code that took time:
+We are currently in process of rewriting our entire Java based monolithic app into micro-service based architecture using [Vyked][1], our in-house open source python based microservice framework based on `asyncio` which is a part of Python standard library since 3.4. Recently, one of my coworkers came to me with what he thought was a bug in Vyked. We currently have timeout for an api call set to 2 minutes which he found not to be enough for one of the apis he had written. The api essentially wrote some data to an excel file and then prepare the browser to download it. I found it suspicious that it would take that long and started looking at his code. After some investigation, I found that this was the block of code that took time:
 
 {% highlight python %}
 def get_delivery_queue_order_details(self, order_ids): 

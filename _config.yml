@@ -27,10 +27,6 @@ stackoverflow_link: https://stackoverflow.com/users/938146/icoder
 xing_link:
 facebook_link:
 
-# Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://www.instagram.com/ankitchandawala/\">Ankit Chandawala</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/nerandell\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
-
 # Build settings
 markdown: kramdown
 

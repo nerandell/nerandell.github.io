@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "vyked",
+    "name": "vyked",
+    "image": "placeholder.jpg",
+    "url": "https://github.com/nerandell/vyked",
+    "date": "Dec 2015",
+    "tags": [
+      "python",
+      "asyncio",
+      "microservices"
+    ]
+  },
+  {
+    "name": "async_retrial",
+    "image": "placeholder.jpg",
+    "url": "https://github.com/nerandell/async_retrial",
+    "date": "Dec 2015",
+    "tags": [
+      "asyncio",
+      "python"
+    ]
+  },
+  {
+    "name": "cymbaline",
+    "image": "placeholder.jpg",
+    "url": "https://github.com/nerandell/cymbaline",
+    "date": "Dec 2015",
+    "tags": [
+      "php",
+      "web framework"
+    ]
+  },
+  {
+    "name": "seamus",
+    "image": "placeholder.jpg",
+    "url": "https://github.com/nerandell/seamus",
+    "date": "Jan 2016",
+    "tags": [
+      "python",
+      "testing"
+    ]
+  }
+]

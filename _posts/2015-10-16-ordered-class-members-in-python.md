@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ordered class members in python
+title: "Ordered class members in python"
 date: 2015-10-16 12:32:18
 summary: List all the members of a class in the order in which they were declared
 comments: true

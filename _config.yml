@@ -1,43 +1,57 @@
-# Site settings
-title: "Ankit Chandawala"
-email: ankitchandawala@gmail.com
-description: "Blog about work and hobbies"
-baseurl: ""
-url: "https://blog.ankitchandawala.com/"
-title_description: "My name is Ankit and this is my website about everything I find time to write about. I currently work as a Software Engineer at Skyscanner where we are transforming the travel industry.
-
-                    I currently live in London, and I love traveling, biking, hiking, and reading whenever I get time.
-
-                    You can contact me by email at ankitchandawala /at/ gmail.com"
-resume_section: "Download my resume <a href=\"https://drive.google.com/uc?export=download&id=1aaC-LS_6eK3f2jPHZhYF_2YQQNaDh3Bd\" target=\"_new\">here</a>."
-title_image: "https://www.gravatar.com/avatar/59d563cdddde473e2cfffc61f339428e?s=500&d=mm"
-google_analytics: "UA-68709154-1"
-disqus_account: nerandell
-github_repository: https://github.com/nerandell/nerandell.github.io
+title: Posts
+description: My Personal Blog
+author: Ankit Chandawala
+github: https://github.com/nerandell
+about: I'm a software engineer with experience in mobile, backend and distributed systems
+disqus_shortname: nerandell
+google_analytics: UA-68709154-1
+avatar_url: https://www.gravatar.com/avatar/59d563cdddde473e2cfffc61f339428e
 addthis_id: ra-5c2be88758074d7c
-post_limit: 5
 
-# Social usernames/URLs
-twitter_username: ankitchandawala
-github_username:  nerandell
-instagram_username: ankitchandawala
-reddit_username:
-linkedin_link: https://www.linkedin.com/in/ankitchandawala/
-google_plus_link:
-stackoverflow_link: https://stackoverflow.com/users/938146/icoder
-xing_link:
-facebook_link:
+enableTags: true
+tagarray: []
 
-# Build settings
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-twitter
+      link: "https://twitter.com/ankitchandawala"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/ankitchandawala"
+    - icon: fa-github
+      link: "https://github.com/nerandell"
+    - icon: fa-stack-exchange
+      link: "https://stackoverflow.com/users/938146/icoder"
+    - icon: fa-instagram
+      link: "https://www.instagram.com/ankitchandawala"
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+    - text: XML Feed
+      url: /feed.xml
+
+url: "https://nerandell.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
 markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
 
-permalink: pretty
-exclude: [vendor]
-
-plugins:
-- jekyll-seo-tag
-- jekyll-sitemap
+exclude:
+  - .idea

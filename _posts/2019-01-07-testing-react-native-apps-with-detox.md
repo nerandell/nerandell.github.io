@@ -66,7 +66,7 @@ export default class App extends Component {
 
 This application looks something like this:
 
-![Demo app](/images/demo_app.gif)
+![Demo app](/static/img/demo_app.gif)
 
 You will see a special property called `testID` assigned to some of the views. This is how react native uniquely 
 identifies the views. We will see this in action when we start writing our tests. Follow this [guide][5] to get 
@@ -185,7 +185,7 @@ detox test
 Usually, when running the test suite, the device runs in headless mode. 
 But if you open Simulator.app in OSX, you should see the tests in action. 
 
-![Demo tests](/images/demo.gif)
+![Demo tests](/static/img/demo.gif)
 
 That's it. We have our first e2e tests ready.  
 

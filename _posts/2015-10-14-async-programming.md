@@ -1,11 +1,10 @@
 --- 
 layout: post 
-title: Using asyncio.gather in python
+title: "Using asyncio.gather in python"
 date: 2015-10-14 12:32:18
 summary: Using asyncio.gather in python to write efficient code
 comments: true 
 categories: programming
-thumbnail: programming
 tags:
  - python
  - asyncio

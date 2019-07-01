@@ -53,5 +53,9 @@ compress_html:
   ignore:
     envs: ['development']
 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 exclude:
   - .idea
